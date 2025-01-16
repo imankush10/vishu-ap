@@ -10,7 +10,7 @@ app.use(express.json());
 
 async function main()
 {
-    await mongoose.connect('mongodb+srv://admin:imankush10@cluster0.no6rkve.mongodb.net/');
+    await mongoose.connect("url here");
 
     const UserSchema = new mongoose.Schema({
         email: { type: String, required: true, unique: true },
